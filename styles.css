@@ -1,19 +1,20 @@
-body, html {
-  height: 100%;
-  margin: 0;
+body {
+  background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #222;
+  height: 100vh;
+  margin: 0;
 }
 
 .turntable {
   width: 300px;
   height: 300px;
-  background-color: #ccc;
+  background-color: #222;
   border-radius: 50%;
   position: relative;
   animation: rotate 3s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .record {
@@ -27,6 +28,7 @@ body, html {
   top: 50px;
   left: 50px;
   animation: spin 3s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes rotate {
@@ -45,4 +47,8 @@ body, html {
   to {
     transform: rotate(360deg);
   }
+}
+
+#audio {
+  display: none;
 }
