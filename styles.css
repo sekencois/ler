@@ -50,5 +50,5 @@ body {
 }
 
 #audio {
-  display: none;
+  display: none; /* Sembunyikan kontrol audio */
 }
