@@ -10,8 +10,3 @@ audio.addEventListener('play', function() {
 audio.addEventListener('pause', function() {
   record.style.animationPlayState = 'paused';
 });
-
-// Otomatis memutar audio ketika dokumen dimuat
-document.addEventListener('DOMContentLoaded', function() {
-  audio.play();
-});
