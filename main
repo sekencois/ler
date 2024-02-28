@@ -491,7 +491,7 @@ print_success "Password SSH"
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget "http://raw.githubusercontent.com/LunaticBackend/LTxFT/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh"
+wget "http://xlord.xyz/Fls/limit.sh && chmod +x limit.sh && ./limit.sh"
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
@@ -888,7 +888,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "\e[94;1m╔═════════════════════════════════════════════════╗\e[0m"
-echo -e "\e[96;1m               ----[ LT PROJECT ]----                    \e[0m"
+echo -e "\e[96;1m               ----[ XLORD GANTENG ]----                    \e[0m"
 echo -e "\e[94;1m╚═════════════════════════════════════════════════╝\e[0m"
 echo ""
 echo -e "\e[95;1m  Whatsapp : 0881036683241 \e[0m"
