@@ -856,5 +856,5 @@ clear
 echo ""
 echo ""
 echo ""
-read -p "Press [ Enter ]  TO REBOOT"
-reboot
+read -p "Press [ Enter ]  TO MENU"
+menu
