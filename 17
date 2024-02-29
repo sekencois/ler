@@ -370,6 +370,10 @@ mkdir -p /etc/ssh
 mkdir -p /usr/bin/xray/
 mkdir -p /var/log/xray/
 mkdir -p /var/www/html
+mkdir -p /etc/xlord/ssh/log
+mkdir -p /etc/nilaa/vless/log
+mkdir -p /etc/nilaa/vmess/log
+mkdir -p /etc/nilaa/trojan/log
 mkdir -p /etc/kyt/files/vmess/ip
 mkdir -p /etc/kyt/files/vless/ip
 mkdir -p /etc/kyt/files/trojan/ip
@@ -756,15 +760,6 @@ rm -f /root/key.pem
 rm -f /root/cert.pem
 print_success "All Packet"
 }
-function neofetch(){
-    clear
-    print_install "Memasang neofetch"
-    apt install neofetch -y
-apt install python3 python3-pip git
-    chmod +x neofetch/*
-    mv neofetch/* /usr/local/sbin
-    rm -rf neofetch
-}
 function menu(){
 clear
 print_install "Memasang Menu Packet"
@@ -784,7 +779,7 @@ if [ -f ~/.bashrc ]; then
 fi
 fi
 mesg n || true
-neo
+welcome
 EOF
 cat >/etc/cron.d/xp_all <<-END
 SHELL=/bin/sh
@@ -897,7 +892,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "\e[94;1m╔═════════════════════════════════════════════════╗\e[0m"
-echo -e "\e[96;1m               ----[ LT PROJECT ]----                    \e[0m"
+echo -e "\e[96;1m               ----[ XLORD STORE ]----                    \e[0m"
 echo -e "\e[94;1m╚═════════════════════════════════════════════════╝\e[0m"
 echo ""
 echo -e "\e[95;1m  Whatsapp : 0881036683241 \e[0m"
