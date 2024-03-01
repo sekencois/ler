@@ -770,6 +770,15 @@ mv menu/* /usr/local/sbin
 rm -rf menu
 rm -rf menu.zip
 }
+function neo(){
+    clear
+    print_install "Memasang neofetch"
+    apt install neofetch -y
+apt install python3 python3-pip git
+    chmod +x neofetch/*
+    mv neofetch/* /usr/local/sbin
+    rm -rf neofetch
+}
 function profile(){
 clear
 cat >/root/.profile <<EOF
@@ -779,7 +788,7 @@ if [ -f ~/.bashrc ]; then
 fi
 fi
 mesg n || true
-welcome
+neo
 EOF
 cat >/etc/cron.d/xp_all <<-END
 SHELL=/bin/sh
