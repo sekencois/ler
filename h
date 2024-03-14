@@ -32,10 +32,10 @@ function line_atas(){
 echo -e "   ${g}┌───────────────────────────────────────────────┐${p}"
 }
 function line_up(){
-echo -e "      ${g}┌───────────────────────────────────────┐${p}"
+echo -e "      ${g}┌─────────────────────────────────────────┐${p}"
 }
 function line_ip() {
-echo -e "      ${g}└───────────────────────────────────────┘${p}"
+echo -e "      ${g}└─────────────────────────────────────────┘${p}"
 }
 function line_bawah() {
 echo -e "   ${g}└───────────────────────────────────────────────┘${p}"
@@ -217,8 +217,8 @@ echo -e "      ${g}│  ${gb}[3] => Vless Menu ${NC} ${g}│  ${gb}[9] => Speedt
 echo -e "      ${g}│  ${gb}[4] => Trojan Menu ${NC}${g}│  ${gb}[10] => Domain   ${g}│"
 echo -e "      ${g}│  ${gb}[5] => Tcp Bbr Menu${NC}${g}│  ${gb}[11] => Backup   ${g}│"
 echo -e "      ${g}│  ${gb}[6] => Ganti Banner${NC}${g}│  ${gb}[12] => DNS Menu ${g}│"
-echo -e "      ${g}│       ${gb}[77] => Reboot Vps     ${gb}[88] => Gotop       ${g}│"
-echo -e "      ${g}│     ${gb}[99] => Usage menu     ${00}[88] => Bot Manage    ${g}│"
+echo -e "      ${g}│     ${gb}[77] => Reboot Vps ${gb}[88] => Gotop             ${g}│"
+echo -e "      ${g}│   ${gb}[99] => Usage menu ${gb}[00] => Bot Manage          ${g}│"
 line_ip
 read -p " Select menu (00-99) => "  opt
 echo -e   ""
